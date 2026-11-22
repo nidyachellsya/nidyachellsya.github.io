@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nidya Chellsya | CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --blue:#1b2b8f; --blue-d:#121d66; --sun:#ffc83d; --ink:#1a1d2e; --soft:#555a70; --line:#cdd2ef; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"DM Sans", Arial, sans-serif; color:var(--ink); background:#fff; line-height:1.65; }
+  h1, h2, h3 { font-family:"Bricolage Grotesque", Arial, sans-serif; margin:0; }
+
+  .page { display:grid; grid-template-columns:340px 1fr; min-height:100vh; }
+  aside { background:var(--blue); color:#fff; padding:40px 30px; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .side-in { position:sticky; top:40px; }
+  .foto, .inisial { width:150px; height:180px; border-radius:20px; object-fit:cover; display:block; margin-bottom:26px; background:var(--blue-d); transform:rotate(-3deg); border:3px solid var(--sun); }
+  .inisial { display:none; align-items:center; justify-content:center; font:800 54px "Bricolage Grotesque", sans-serif; color:var(--sun); }
+  aside h1 { font-size:54px; line-height:.98; font-weight:800; letter-spacing:-1px; }
+  .jurusan { margin:16px 0 0; color:#c9d0ff; font-size:15px; }
+  aside h2 { font-size:18px; color:var(--sun); margin:34px 0 8px; }
+  aside p, aside li { font-size:15px; margin:0 0 6px; overflow-wrap:anywhere; }
+  aside ul { list-style:none; padding:0; margin:0; }
+  aside a { color:#fff; }
+  .tombol { margin-top:34px; padding:11px 20px; border:0; border-radius:10px; background:var(--sun); color:var(--ink); font:500 15px "DM Sans", Arial, sans-serif; cursor:pointer; }
+  .tombol:focus-visible, a:focus-visible { outline:3px solid #fff; outline-offset:2px; }
+
+  main { padding:48px 52px 60px; max-width:760px; }
+  main h2 { font-size:28px; color:var(--blue); margin:0 0 20px; }
+  section { margin-bottom:44px; }
+  .intro { font-size:18px; line-height:1.7; margin:0; }
+
+  .item { position:relative; padding:0 0 26px 26px; border-left:2px solid var(--line); margin-left:6px; }
+  .item:last-child { padding-bottom:0; border-left-color:transparent; }
+  .item::before { content:""; position:absolute; left:-8px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--sun); border:3px solid var(--blue); }
+  .waktu { font-size:14px; font-weight:500; color:var(--blue); margin:0; }
+  .item h3 { font-size:20px; margin:2px 0 4px; }
+  .item p { margin:0; color:var(--soft); }
+
+  @media (max-width:800px) {
+    .page { grid-template-columns:1fr; }
+    .side-in { position:static; }
+    aside { padding:32px 24px 36px; }
+    main { padding:36px 24px 50px; }
+  }
+  @media print {
+    .tombol { display:none; }
+    .page { grid-template-columns:260px 1fr; min-height:0; }
+    aside { padding:24px 20px; }
+    aside h1 { font-size:40px; }
+    main { padding:24px 28px; }
+    .item { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== CARA MENGUBAH =====
+     Ganti tulisan di antara tanda > dan < dengan datamu sendiri.
+     Jangan hapus tanda < > atau kata-kata di dalamnya.
+     Mau tambah pengalaman? Salin satu blok <div class="item"> ... </div>. -->
+
+<div class="page">
+
+  <aside>
+    <div class="side-in">
+      <!-- Foto: upload file foto ke repo dengan nama foto.jpg -->
+      <img class="foto" id="foto" src="foto.jpg" alt="Foto Nidya Chellsya">
+      <div class="inisial" id="inisial">NC</div>
+
+      <h1>Nidya Chellsya</h1>
+      <p class="jurusan">Mahasiswa S1 Manajemen, Universitas Contoh</p>
+
+      <h2>Kontak</h2>
+      <ul>
+        <li><a href="mailto:nidya@email.com">nidya@email.com</a></li>
+        <li>0812-3456-7890</li>
+        <li>Yogyakarta</li>
+        <li>@nidyachellsya</li>
+      </ul>
+
+      <h2>Keahlian</h2>
+      <ul>
+        <li>Microsoft Word dan Excel</li>
+        <li>Desain dengan Canva</li>
+        <li>Public speaking</li>
+        <li>Kerja tim</li>
+      </ul>
+
+      <button class="tombol" onclick="window.print()">Simpan sebagai PDF</button>
+    </div>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Tentang saya</h2>
+      <p class="intro">Mahasiswa semester 5 yang teliti, cepat belajar, dan nyaman bekerja dalam tim. Saya tertarik pada administrasi, pemasaran digital, dan pengembangan usaha, dan sedang mencari kesempatan magang untuk menerapkan ilmu dari kuliah.</p>
+    </section>
+
+    <section>
+      <h2>Pengalaman</h2>
+      <div class="item">
+        <p class="waktu">2025</p>
+        <h3>Asisten Dosen</h3>
+        <p>Membantu praktikum, menyiapkan materi, dan menilai tugas mahasiswa.</p>
+      </div>
+      <div class="item">
+        <p class="waktu">2024 - 2025</p>
+        <h3>Sekretaris BEM Fakultas</h3>
+        <p>Mengelola surat-menyurat, notulen rapat, dan arsip kegiatan organisasi.</p>
+      </div>
+      <div class="item">
+        <p class="waktu">2024</p>
+        <h3>Admin Toko Online (paruh waktu)</h3>
+        <p>Membalas pelanggan, mencatat pesanan, dan membuat laporan penjualan mingguan.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <div class="item">
+        <p class="waktu">2023 - sekarang</p>
+        <h3>Universitas Contoh</h3>
+        <p>S1 Manajemen, IPK 3,60.</p>
+      </div>
+      <div class="item">
+        <p class="waktu">2020 - 2023</p>
+        <h3>SMA Negeri 1 Yogyakarta</h3>
+        <p>Jurusan IPA.</p>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<script>
+  // Kalau foto.jpg belum diupload, tampilkan kotak berisi inisial.
+  document.getElementById("foto").addEventListener("error", function () {
+    this.style.display = "none";
+    document.getElementById("inisial").style.display = "flex";
+  });
+</script>
+</body>
+</html>
